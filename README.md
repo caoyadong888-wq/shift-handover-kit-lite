@@ -156,3 +156,8 @@ BMC/IPMI 工具包：https://caoyadong.gumroad.com/l/dzmww
 ### 许可证
 
 MIT。Copyright (c) 2026 caoyadong888-wq。见 [LICENSE](LICENSE)。
+
+
+## Full version / 完整版
+itch.io: https://caoyadong-ops.itch.io/shift-handover-template
+完整版在 itch.io：https://caoyadong-ops.itch.io/shift-handover-template
