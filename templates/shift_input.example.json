@@ -1,0 +1,75 @@
+{
+  "site": "DC1 Hall B",
+  "shift": "day",
+  "date": "2026-10-19",
+  "outgoing_lead": "Shift A lead",
+  "incoming_lead": "Shift B lead",
+  "window_start": "2026-10-19T08:00:00",
+  "window_end": "2026-10-19T16:00:00",
+  "summary_note": "Quiet day. One label ticket closed. A filter task stays open for later in the week. No freeze is in effect.",
+  "checklist": {
+    "walkdown": true,
+    "alarms_acked": true,
+    "tickets_reviewed": true,
+    "change_freeze": false,
+    "spares": true,
+    "access_log": true
+  },
+  "incidents": [
+    {
+      "id": "INC-200",
+      "title": "Scuffed rack label on row 2",
+      "severity": "P4",
+      "status": "closed",
+      "opened": "2026-10-19T09:05:00",
+      "closed": "2026-10-19T09:35:00",
+      "owner_role": "Hall B tech",
+      "summary": "Label replaced from the cage cart. No customer impact."
+    }
+  ],
+  "changes": [
+    {
+      "id": "CHG-310",
+      "title": "Replace a scuffed asset label",
+      "status": "completed",
+      "owner_role": "Hall B tech",
+      "summary": "Like-for-like label. No config change.",
+      "started": "2026-10-19T09:10:00",
+      "finished": "2026-10-19T09:30:00"
+    }
+  ],
+  "hardware_actions": [
+    {
+      "id": "HW-12",
+      "kind": "cabling",
+      "asset": "ROW2-U12 label holder",
+      "status": "done",
+      "owner_role": "Hall B tech",
+      "summary": "Holder clipped back onto the upright."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-18",
+      "title": "Swap CRAC-1 pre-filter",
+      "owner_role": "Facilities watch",
+      "due": "2026-10-22",
+      "status": "open"
+    },
+    {
+      "id": "TASK-11",
+      "title": "Confirm spare fan count on the cart",
+      "owner_role": "Hall B tech",
+      "due": "2026-10-19T12:00:00",
+      "status": "done"
+    }
+  ],
+  "risks": [
+    {
+      "id": "RISK-2",
+      "item": "CRAC-1 filter is due this week",
+      "level": "watch",
+      "note": "Airflow is still in band. The task above covers the swap."
+    }
+  ]
+}

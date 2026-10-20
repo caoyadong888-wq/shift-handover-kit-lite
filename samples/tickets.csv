@@ -1,0 +1,13 @@
+ticket_id,opened,closed,priority,status,category,summary,owner_role
+TCK-2401,2026-10-19T21:10:00,2026-10-19T22:40:00,P3,closed,cooling,CRAC-2 supply air drifted high and recovered,Hall B tech
+TCK-2402,2026-10-19T22:05:00,,P1,open,power,PDU-B feed A breaker trip on row 4,Shift A lead
+TCK-2403,2026-10-18T18:00:00,2026-10-19T21:30:00,P2,closed,network,Leaf pair flap cleared after an optic reseat,Network on-call
+TCK-2404,2026-10-19T23:15:00,2026-10-20T01:05:00,P4,closed,access,Cage door badge reader cleaned,Facilities watch
+TCK-2405,2026-10-20T02:10:00,,P2,open,cooling,In-row cooler 3 pump warning still up,Hall B tech
+TCK-2406,2026-10-17T09:00:00,,P2,open,storage,Disk shelf spare has not arrived and the shelf is degraded,Vendor desk
+TCK-2407,2026-10-20T03:40:00,2026-10-20T04:10:00,P3,closed,cabling,Loose DAC on TOR-12 reseated,Network on-call
+TCK-2408,2026-10-20T04:20:00,,P4,open,label,Two rack positions missing asset tags,Hall B tech
+TCK-2409,2026-10-19T20:30:00,2026-10-19T20:55:00,P1,closed,power,UPS-2 was on battery for a short transfer and returned,Facilities watch
+TCK-2410,2026-10-20T05:00:00,2026-10-20T06:20:00,P3,closed,monitoring,Poller restarted after the collector stalled,Shift A lead
+TCK-2411,2026-10-16T11:00:00,,P3,open,facilities,Raised floor tile cracked near row 6 and is taped,Facilities watch
+TCK-2412,2026-10-20T06:50:00,2026-10-20T07:30:00,P2,closed,hardware,Memory warning on a compute node cleared after a reseat,Hall B tech

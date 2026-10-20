@@ -1,0 +1,162 @@
+{
+  "site": "DC1 Hall B",
+  "shift": "night",
+  "date": "2026-10-19",
+  "outgoing_lead": "Shift A lead",
+  "incoming_lead": "Shift B lead",
+  "window_start": "2026-10-19T20:00:00",
+  "window_end": "2026-10-20T08:00:00",
+  "summary_note": "Row 4 is on a single feed. INC-118 and TCK-2402 are the same feed event in the incident queue and the ticket queue. Shelf S2 stays degraded until the spare arrives. Zone 4 fire supervisory is still in trouble.",
+  "checklist": {
+    "walkdown": true,
+    "alarms_acked": false,
+    "tickets_reviewed": true,
+    "change_freeze": true,
+    "spares": false,
+    "access_log": true
+  },
+  "incidents": [
+    {
+      "id": "INC-118",
+      "title": "PDU-B feed A still open after the trip",
+      "severity": "P1",
+      "status": "open",
+      "opened": "2026-10-19T16:40:00",
+      "closed": "",
+      "owner_role": "Shift A lead",
+      "summary": "Breaker opened during the day window and was not restored. Row 4 is on feed B only."
+    },
+    {
+      "id": "INC-130",
+      "title": "UPS-2 short battery transfer",
+      "severity": "P3",
+      "status": "closed",
+      "opened": "2026-10-19T20:20:00",
+      "closed": "2026-10-19T20:50:00",
+      "owner_role": "Facilities watch",
+      "summary": "UPS returned to normal. No load was dropped."
+    },
+    {
+      "id": "INC-141",
+      "title": "In-row cooler 3 pump warning",
+      "severity": "P2",
+      "status": "open",
+      "opened": "2026-10-20T02:12:00",
+      "closed": "",
+      "owner_role": "Hall B tech",
+      "summary": "Differential pressure is low. The row is still in its temperature band."
+    }
+  ],
+  "changes": [
+    {
+      "id": "CHG-501",
+      "title": "Reseat leaf-B uplink optic",
+      "status": "completed",
+      "owner_role": "Network on-call",
+      "summary": "Break-fix during the freeze after the flap. Light levels were normal after the reseat.",
+      "started": "2026-10-19T22:20:00",
+      "finished": "2026-10-19T22:45:00"
+    },
+    {
+      "id": "CHG-502",
+      "title": "Reseat TOR-12 DAC",
+      "status": "completed",
+      "owner_role": "Network on-call",
+      "summary": "Break-fix during the freeze. The error counter stopped climbing.",
+      "started": "2026-10-20T03:42:00",
+      "finished": "2026-10-20T04:05:00"
+    },
+    {
+      "id": "CHG-488",
+      "title": "Flash a spare node",
+      "status": "aborted",
+      "owner_role": "Hall B tech",
+      "summary": "Stopped. The freeze does not allow a flash that is not break-fix.",
+      "started": "2026-10-20T05:10:00",
+      "finished": "2026-10-20T05:18:00"
+    }
+  ],
+  "hardware_actions": [
+    {
+      "id": "HW-17",
+      "kind": "rma",
+      "asset": "SHELF-S2 bay 3",
+      "status": "pending",
+      "owner_role": "Vendor desk",
+      "summary": "Spare is requested. The shelf stays degraded."
+    },
+    {
+      "id": "HW-18",
+      "kind": "part_swap",
+      "asset": "NODE-C14 DIMM A2",
+      "status": "done",
+      "owner_role": "Hall B tech",
+      "summary": "Swapped with a known-good module from the cage cart."
+    },
+    {
+      "id": "HW-19",
+      "kind": "cabling",
+      "asset": "TOR-12 port 4",
+      "status": "done",
+      "owner_role": "Network on-call",
+      "summary": "DAC reseated and latched."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-55",
+      "title": "Chase the shelf spare for shelf S2",
+      "owner_role": "Vendor desk",
+      "due": "2026-10-18",
+      "status": "open"
+    },
+    {
+      "id": "TASK-60",
+      "title": "Finish the row 4 asset tag audit",
+      "owner_role": "Hall B tech",
+      "due": "2026-10-21",
+      "status": "open"
+    },
+    {
+      "id": "TASK-40",
+      "title": "Replace the CRAC-2 pre-filter",
+      "owner_role": "Facilities watch",
+      "due": "2026-10-19",
+      "status": "done"
+    },
+    {
+      "id": "TASK-70",
+      "title": "Confirm the PDU-B lockout with the day crew",
+      "owner_role": "Shift B lead",
+      "due": "2026-10-20T10:00:00",
+      "status": "open"
+    },
+    {
+      "id": "TASK-71",
+      "title": "Book the row 6 floor tile replacement",
+      "owner_role": "Facilities watch",
+      "due": "2026-10-19",
+      "status": "open"
+    }
+  ],
+  "risks": [
+    {
+      "id": "RISK-1",
+      "item": "Row 4 is on a single feed",
+      "level": "elevated",
+      "note": "Feed A breaker is still open. A second trip drops the row."
+    },
+    {
+      "id": "RISK-2",
+      "item": "Shelf S2 is degraded",
+      "level": "elevated",
+      "note": "No matching spare is on the cart."
+    },
+    {
+      "id": "RISK-3",
+      "item": "Fire panel zone 4 supervisory",
+      "level": "watch",
+      "note": "The panel is in trouble, not in alarm. Facilities watch owns the next check."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+ticket_id,opened,closed,priority,status,category,summary,owner_role
+TCK-1001,2026-10-19T09:00:00,2026-10-19T09:40:00,P4,closed,label,Replaced a scuffed rack label,Hall B tech
+TCK-1002,2026-10-19T10:00:00,,P3,open,cooling,CRAC filter due later this week,Facilities watch

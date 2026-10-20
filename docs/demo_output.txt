@@ -1,0 +1,12 @@
+Shift handover kit lite demo
+
+$ python3 scripts/handover_gen.py --input samples/shift_input.json --tickets samples/tickets.csv --out out --lang both
+site: DC1 Hall B
+shift: night 2026-10-19
+status: red
+reasons: open_p1, open_p2, sla_breach, overdue_task
+tickets opened: 9 closed: 7 open: 5 sla_breaches: 2
+mttr_minutes: 289.3
+wrote out/handover.md (7307 bytes)
+generator exit 3
+demo complete
